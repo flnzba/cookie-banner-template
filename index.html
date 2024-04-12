@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cookie.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Home</h1>
+        <p>Home page</p>
+    </main>
+    <div id="cookieBanner" class="hidden fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
+        <div class="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="p-2 rounded-lg bg-indigo-600 shadow-lg sm:p-3">
+                <div class="flex items-center justify-between flex-wrap">
+                    <div class="w-0 flex-1 flex items-center">
+                        <span class="flex p-2 rounded-lg bg-indigo-800">
+                            <!-- Cookie Icon -->
+                            🍪
+                        </span>
+                        <p class="ml-3 font-medium text-white truncate">
+                            <span>Wir verwenden Cookies um unsere Webseite laufend besser machen zu können.</span>
+                        </p>
+                    </div>
+                    <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
+                        <button id="cookieAcceptButton" type="button"
+                            class="flex p-2 rounded-md bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white">
+                            <span class="text-white">Akzeptieren</span>
+                        </button>
+                        <div class="px-8"></div>
+                        <button id="cookieDeclineButton" type="button"
+                            class="flex p-2 rounded-md bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white">
+                            <span class="text-white">Ablehnen</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
